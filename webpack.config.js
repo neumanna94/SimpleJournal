@@ -1,5 +1,8 @@
 const path = require('path');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const HtmlWebpackPlugin = require ('html-webpack-plugin');
+const CleanWebpackPlugin = require ('clean-webpack-plugin');
+const UglifyJsPlugin = require ('uglifyjs-webpack-plugin');
+
 
 module.exports = {
   entry: './src/main.js',
@@ -11,7 +14,7 @@ module.exports = {
   devServer: {
     contentBase: './dist'
   },
-  plugins:
+  plugins: [
   new UglifyJsPlugin({ sourceMap: true }),
   new CleanWebpackPlugin(['dist']),
   new HtmlWebpackPlugin({

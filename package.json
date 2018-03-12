@@ -36,11 +36,11 @@
     "type": "git",
     "url": "git+https://github.com/neumanna94/EpicodusNpmPackageTemplate.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/neumanna94/EpicodusNpmPackageTemplate/issues"
   },
-  "homepage": "https://github.com/neumanna94/EpicodusNpmPackageTemplate#readme"
+  "homepage": "https://github.com/neumanna94/EpicodusNpmPackageTemplate#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
 }
