@@ -19,30 +19,40 @@
     <div class = "row">
       <div class = "col-md-12">
         <div class="form-group">
-          <h3>Make an Entry <hr></h3>
-          <label for="title">Title</label>
-          <input id="title" class="form-control" type="text">
-          <label for="body">Body</label>
-          <input id="body" class="form-control" type="text">
-          <button type="submit" class="btn small">Create Entry</button>
+          <form id="newEntry">
+            <h3>Make an Entry <hr></h3>
+            <label for="title">Title</label>
+            <input id="title" class="form-control" type="text">
+            <label for="body">Body</label>
+            <input id="body" class="form-control" type="text">
+            <button type="submit" class="btn small">Create Entry</button>
+          </form>
         </div>
         <div class="form-group">
           <h3> Select a function to perform on entries <hr> </h3>
-          <select class="form-control" id="functionSelector">
-            <option value = "0">Get Number of Words in Entry Body</option>
-            <option value = "1">Get Number of Vowels in Entry Body</option>
-            <option value = "2">Get First Word in Entry Body</option>
-            <option value = "3">Get First Eight Words in Entry Body</option>
-          </select>
-          <button type="submit" class="btn small">Select a function</button>
+          <form id="functionSelector">
+            <select class="form-control" id="functionSelector">
+              <option value = "0">Get Number of Words in Entry Body</option>
+              <option value = "1">Get Number of Vowels in Entry Body</option>
+              <option value = "2">Get First Word in Entry Body</option>
+              <option value = "3">Get First Eight Words in Entry Body</option>
+            </select>
+            <button type="submit" class="btn small">Select a function</button>
+          </form>
         </div>
       </div>
     </div>
-    <footer>Epicodus (C) Alex, Ernest, Justin, Victor 2018</footer>
+    <footer>Alexander @ Epicodus 2018</footer>
   </div>
 
 </body>
 <script src="text/javascript">
 $(document).ready(function(){
+  $("form#functionSelector").submit(function(event) {
+    event.preventDefault();
+  });
+  $("form#functionSelector").submit(function(event) {
+    event.preventDefault();
+  });
 });
 </script>
