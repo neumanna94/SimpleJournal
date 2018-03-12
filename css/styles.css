@@ -25,6 +25,27 @@ body {
   background-color: #297373;
   font-family: "Book Antiqua";
 }
+#refresh {
+  color: orange;
+  display: inline-block;
+  font-family: "Book Antiqua";
+}
+#refresh:hover {
+  color: #ff8552;
+}
+.col-md-2 {
+  background-color: #ff8552;
+  color: #85ffc7;
+  font-family: "Papyrus";
+  border: 1px solid black;
+  box-shadow: 0 0 5px black;
+  font-weight: bold;
+  display: block !important;
+  margin: 10px;
+}
+.col-md-2 h6 {
+  color:white;
+}
 footer {
     position: fixed;
     bottom: 0;
