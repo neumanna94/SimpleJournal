@@ -1,0 +1,22 @@
+.jumbotron {
+  color: #85ffc7;
+  background-color: #ff8552;
+  font-family: "Papyrus";
+}
+.btn {
+  color: #85ffc7;
+  background-color: #ff8552;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn:hover {
+  color: #84FFE4;
+  background-color: #FF5A51;
+  display: inline-block;
+  text-decoration: none;
+}
+body {
+  color: #85ffc7;
+  background-color: #297373;
+  font-family: "Book Antiqua";
+}
