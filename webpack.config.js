@@ -15,7 +15,7 @@ module.exports = {
   new UglifyJsPlugin({ sourceMap: true }),
   new CleanWebpackPlugin(['dist']),
   new HtmlWebpackPlugin({
-    title: 'Ping Pong',
+    title: 'SimpleJournal',
     template: './src/index.html',
     inject: 'body'
   })

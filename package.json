@@ -1,5 +1,5 @@
 {
-  "name": "JsNpmTemplate",
+  "name": "SimpleJournal",
   "version": "1.0.0",
   "main": "webpack.config.js",
   "scripts": {
@@ -32,4 +32,15 @@
     "webpack-cli": "^2.0.9",
     "webpack-dev-server": "^3.1.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neumanna94/EpicodusNpmPackageTemplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neumanna94/EpicodusNpmPackageTemplate/issues"
+  },
+  "homepage": "https://github.com/neumanna94/EpicodusNpmPackageTemplate#readme"
 }
