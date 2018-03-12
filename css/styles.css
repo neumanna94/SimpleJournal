@@ -27,8 +27,6 @@ body {
 }
 #refresh {
   color: orange;
-  display: inline-block;
-  font-family: "Book Antiqua";
 }
 #refresh:hover {
   color: #ff8552;
