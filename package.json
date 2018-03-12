@@ -1,7 +1,6 @@
 {
   "name": "JsNpmTemplate",
   "version": "1.0.0",
-  "description": "",
   "main": "webpack.config.js",
   "scripts": {
     "test": "karma start karma.conf.js",
@@ -32,5 +31,5 @@
     "webpack": "^4.0.1",
     "webpack-cli": "^2.0.9",
     "webpack-dev-server": "^3.1.0"
-  }
+  },
 }
