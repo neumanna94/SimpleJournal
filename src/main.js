@@ -5,7 +5,8 @@ var allEntries = [];
 function displayAllEntries(){
   $("#results").text("");
   for(var i = 0; i < allEntries.length; i ++){
-    $("#results").append('<div class="col-md-2 result"> <h6> Entry Number: ' + i + ' </h6> <h2>Title:' + allEntries[i].title + '</h2><p> Body: ' + allEntries[i].body + '</p>');
+    var thisBody = allEntries[i];
+    $("#results").append('<div class="col-md-2 result"> <h6> Entry Number: ' + i + ' </h6> <h2>Title:' + allEntries[i].title + '</h2><p>Body: ' + thisBody.body + '</p>' + '<p>Number of Words: ' + thisBody.GetWords() + '</p><p>Number of Vowels in Body: ' + thisBody.GetVowels() + '</p>');
   }
 }
 $(document).ready(function(){
@@ -15,6 +16,7 @@ $(document).ready(function(){
     var bodyIn = $("#body").val();
     var newEntry = new Entry(titleIn, bodyIn);
     allEntries.push(newEntry);
+    displayAllEntries();
   });
   $("form#functionSelector").submit(function(event) {
     event.preventDefault();

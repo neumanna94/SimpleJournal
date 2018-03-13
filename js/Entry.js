@@ -32,33 +32,24 @@ export function Entry(inputTitle, inputBody) {
 //<--------------------------------END OF CRUD METHODS--------------------------------------->
 //<---------------------------------PROTOTYPE METHODS---------------------------------------->
 //Return number of words in entry
-Entry.prototype.GetWords = function(inputBody){
+Entry.prototype.GetWords = function(){
   let wordCount = 0;
-  let operateOnMe = inputBody.split("");
+  let operateOnMe = this.body.split(" ");
   for(var i = 0; i < operateOnMe.length; i ++){
     wordCount++;
   }
   return wordCount;
 };
 //Return number of vowels
-Entry.prototype.GetVowels = function(inputBody){
+Entry.prototype.GetVowels = function(){
   let vowelCount = 0;
-  let operateOnMe = inputBody.split("");
+  let operateOnMe = this.body.split("");
   for(var i = 0; i < operateOnMe.length; i ++){
-    if(inputBody[i] == "a" || inputBody[i] == "i" || inputBody[i] == "e" || inputBody[i] == "o" || inputBody[i] == "u"){
+    if(operateOnMe[i] == "a" || operateOnMe[i] == "i" || operateOnMe[i] == "e" || operateOnMe[i] == "o" || operateOnMe[i] == "u"){
       vowelCount ++;
     }
   }
   return vowelCount;
-};
-//https://stackoverflow.com/questions/18558417/get-first-word-of-string
-Entry.prototype.GetWords = function(inputBody, numberOfWords){
-  var words = inputBody.split(" ");
-  var outputWords = [];
-  for(var i = 0; i < numberOfWords; i ++){
-    outputWords.push(words[i]);
-  }
-  return outputWords;
 };
 //<--------------------------------END OF PROTOTYPE METHODS--------------------------------------->
 //<------------------------------------HELPER METHODS--------------------------------------->

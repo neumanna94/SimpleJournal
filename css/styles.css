@@ -27,9 +27,11 @@ body {
 }
 #refresh {
   color: orange;
+  cursor:s-resize;
 }
 #refresh:hover {
   color: #ff8552;
+  cursor:s-resize;
 }
 .col-md-2 {
   background-color: #ff8552;
